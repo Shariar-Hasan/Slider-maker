@@ -93,7 +93,7 @@ const createSlider = () => {
     return;
   }
   document.getElementById('img-count-box').style.display = 'none';
-  // crate slider previous next area
+  // create slider previous next area
   sliderContainer.innerHTML = '';
   const prevNext = document.createElement('div');
   prevNext.className = "prev-next d-flex w-100 justify-content-between align-items-center";
@@ -162,13 +162,13 @@ searchEnter.addEventListener('keypress', (e) => {
 
 function showSearchItems() {
   if (searchEnter.value == '') {
-    errorShow('Search input is empty')
+    errorShow('Search input is empty');
+    gallery.innerHTML = '';
     return;
   }
   document.querySelector('.main').style.display = 'none';
   clearInterval(timer);
-  const search = document.getElementById('search');
-  getImages(search.value)
+  getImages(searchEnter.value)
   sliders.length = 0;
 }
 

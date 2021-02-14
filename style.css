@@ -1,6 +1,10 @@
 html,body{
   background-color: rgb(238, 238, 238);
+  
 }
+/* body{
+  position: relative;
+} */
 #sliders {
   height: 400px;
   width: 60%;
@@ -96,7 +100,7 @@ img {
   display: none;
 }
 .img-count{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
